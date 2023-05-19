@@ -31,8 +31,8 @@
                     <ul class="navbar-nav ml-auto">
                       <!--  Ссылки для аутентификации  -->
                         @guest
-                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a></li>
-                            <li><a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a></li>
+                            <li><a class="nav-link" href="{{ route('login') }}">{{ __('логин') }}</a></li>
+                            <li><a class="nav-link" href="{{ route('register') }}">{{ __('регистрация') }}</a></li>
                         @else
                             <li><a class="nav-link" href="{{ route('users.index') }}">Пользователи</a></li>
                             <li><a class="nav-link" href="{{ route('roles.index') }}">Роли</a></li>
@@ -46,7 +46,7 @@
                                     <a class="dropdown-item" href="{{ route('logout') }}"
                                        onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
+                                        {{ __('выход') }}
                                     </a>
 
                                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
